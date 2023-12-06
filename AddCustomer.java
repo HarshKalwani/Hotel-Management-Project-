@@ -120,6 +120,7 @@ public class AddCustomer extends JFrame implements ActionListener{
         croom.setBounds(200,330,150,25);
         add(croom);
 
+        
 
         JLabel lbltime = new JLabel("Checkin Time");
         lbltime.setBounds(35,380,150,20);

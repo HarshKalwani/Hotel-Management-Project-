@@ -12,8 +12,8 @@ public class HotelManagementSystem extends JFrame implements ActionListener{
 
     HotelManagementSystem(){
 
-        setSize(1366 , 565);  //width and height
-        setLocation(100,100);
+        setSize(1920 , 1080);  //width and height
+        setLocation(0,0);
         
 
         //Front Image 
@@ -24,17 +24,18 @@ public class HotelManagementSystem extends JFrame implements ActionListener{
 
         //Caption on Image
         JLabel text = new JLabel("THE DOLI'S HOTEL");
-        text.setBounds(20,430,1000,90);
+        text.setBounds(20,830,1000,90);
         text.setForeground(Color.WHITE); //font color
-        text.setFont(new Font("serif" , Font.PLAIN , 50));
+        text.setFont(new Font("serif" , Font.PLAIN , 90));
         image.add(text);
 
 
         //button on frontpage
         JButton next = new JButton("Next");
-        next.setBounds(1150, 450, 150, 50);
+        next.setBounds(1600, 900, 150, 50);
         next.setBackground(Color.white);
         next.setForeground(Color.DARK_GRAY);
+        next.setFocusable(false);
 
         next.addActionListener(this);//for onClick event
         
