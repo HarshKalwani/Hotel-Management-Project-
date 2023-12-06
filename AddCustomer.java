@@ -108,7 +108,7 @@ public class AddCustomer extends JFrame implements ActionListener{
         try {
             
             Conn conn = new Conn();
-            String query = "select * from room where availability ='Available' ";
+            String query = "select * from room where availability = ' Available ' ";
             ResultSet rs = conn.s.executeQuery(query);
             while(rs.next()){
                 croom.add(rs.getString("roomnumber"));

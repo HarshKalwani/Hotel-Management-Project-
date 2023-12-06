@@ -110,7 +110,7 @@ public class SearchRoom extends JFrame implements ActionListener {
         }else if (ae.getSource() == submit){
             try {
                 String query1 = "select * from room where bed_type = ' "+bedType.getSelectedItem()+" ' ";
-                String query2 = "select * from room where availability  = 'Available' AND ' +bedType.getSelectedItem()+ ' ";
+                String query2 = "select * from room where availability = ' Available ' AND bed_type = ' "+bedType.getSelectedItem()+" ' ";
 
                 Conn conn =  new Conn();
                 ResultSet rs;
@@ -124,7 +124,7 @@ public class SearchRoom extends JFrame implements ActionListener {
 
             } catch (Exception e) {
                 e.printStackTrace();
-            } 
+            }
         }
     }
 
